@@ -1,0 +1,52 @@
+{
+  "name": "launchdarkly-context-provider",
+  "version": "1.0.0",
+  "description": "Context Provider for Launch Darkly",
+  "main": "./lib/index.js",
+  "scripts": {
+    "prebuild": "rm -rf lib && mkdir lib",
+    "build": "tsc -p tsconfig.json --diagnostics",
+    "coverage": "jest --watch=false --watchAll=false --coverage --no-watchman",
+    "lint": "echo lint",
+    "test": "npm run lint && npm run coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marceloOrigoni/launchdarkly-context-provider.git"
+  },
+  "keywords": [
+    "LaunchDarkly",
+    "LaunchDarkly Context",
+    "LaunchDarkly Context Provider"
+  ],
+  "author": "Marcelo Origoni <marcelo@origoni.com.ar>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marceloOrigoni/launchdarkly-context-provider/issues"
+  },
+  "homepage": "https://github.com/marceloOrigoni/launchdarkly-context-provider#readme",
+  "peerDependencies": {
+    "camelize": "^1.0.1",
+    "launchdarkly-js-client-sdk": "^3.1.4",
+    "react": "^16 || ^17 || ^18",
+    "react-dom": "^16 || ^17 || ^18",
+    "typescript": "^3 || ^4 || ^5"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-proposal-private-methods": "^7.18.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "7.23.2",
+    "@babel/preset-react": "7.22.15",
+    "@babel/preset-typescript": "7.23.2",
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/jest": "29.5.7",
+    "babel-jest": "29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-watch-typeahead": "^2.2.2"
+  }
+}
