@@ -19,7 +19,7 @@
     "LaunchDarkly Context",
     "LaunchDarkly Context Provider"
   ],
-  "author": "Marcelo Origoni",
+  "author": "Marcelo Origoni <marcelo@origoni.com.ar>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/marceloOrigoni/launchdarkly-context-provider/issues"
